@@ -144,7 +144,7 @@ export default function Footer() {
     className="transition hover:scale-110"
   >
     <img
-      src="public/instagram.png"
+      src="/instagram.png"
       alt="Instagram"
       className="w-[18px] h-[18px]"
     />
@@ -157,7 +157,7 @@ export default function Footer() {
     className="transition hover:scale-110"
   >
     <img
-      src="public/facebook.png"
+      src="/facebook.png"
       alt="Facebook"
       className="w-[18px] h-[18px]"
     />
@@ -170,7 +170,7 @@ export default function Footer() {
     className="transition hover:scale-110"
   >
     <img
-      src="public/youtube.png"
+      src="/youtube.png"
       alt="YouTube"
       className="w-[18px] h-[18px]"
     />
@@ -183,7 +183,7 @@ export default function Footer() {
     className="transition hover:scale-110"
   >
     <img
-      src="public/linkedin.png"
+      src="/linkedin.png"
       alt="LinkedIn"
       className="w-[18px] h-[18px]"
     />
@@ -211,8 +211,8 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <span className="text-sm font-semibold">Download Our App</span>
-          <img src="public/app-store.png" className="h-11 cursor-pointer" />
-          <img src="public/google-play.png" className="h-11 cursor-pointer" />
+          <img src="/app-store.png" className="h-11 cursor-pointer" />
+          <img src="/google-play.png" className="h-11 cursor-pointer" />
         </div>
       </div>
 
