@@ -3,23 +3,23 @@ import React from "react";
 const features = [
   {
     title: "Designed Specifically For Dogs & Cats",
-    img: "public/pet5.png",
+    img: "/pet5.png",
   },
   {
     title: "Trusted Service Partners",
-    img: "public/pet6.png",
+    img: "/pet6.png",
   },
   {
     title: "AI-Driven Smart Care",
-    img: "public/pet7.png",
+    img: "/pet7.png",
   },
   {
     title: "Secure, Scalable Platform",
-    img: "public/pet8.png",
+    img: "/pet8.png",
   },
   {
     title: "Community First Approach",
-    img: "public/pet9.png",
+    img: "/pet9.png",
   },
 ];
 

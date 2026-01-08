@@ -2,10 +2,10 @@ import React from "react";
 import { Play } from "lucide-react";
 
 const feeds = [
-  { id: 1, img: "public/pet1.png" },
-  { id: 2, img: "public/pet2.png" },
-  { id: 3, img: "public/pet3.png" },
-  { id: 4, img: "public/pet4.png" },
+  { id: 1, img: "/pet1.png" },
+  { id: 2, img: "/pet2.png" },
+  { id: 3, img: "/pet3.png" },
+  { id: 4, img: "/pet4.png" },
 ];
 
 export default function TrendingPetFeed() {

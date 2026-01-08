@@ -26,12 +26,12 @@ export default function DownloadAppSection() {
           {/* STORE BUTTONS */}
           <div className="flex flex-wrap gap-4">
             <img
-              src="public/app-store.png"
+              src="/app-store.png"
               alt="App Store"
               className="h-12 cursor-pointer"
             />
             <img
-              src="public/google-play.png"
+              src="/google-play.png"
               alt="Google Play"
               className="h-12 cursor-pointer"
             />
@@ -41,12 +41,12 @@ export default function DownloadAppSection() {
         {/* RIGHT IMAGES */}
         <div className="flex justify-center lg:justify-end gap-6">
           <img
-            src="public/phone1.png"
+            src="/phone1.png"
             alt="App Screen 1"
             className="w-[160px] sm:w-[200px] lg:w-[230px] drop-shadow-xl"
           />
           <img
-            src="public/phone2.png"
+            src="/phone2.png"
             alt="App Screen 2"
             className="w-[160px] sm:w-[200px] lg:w-[230px] drop-shadow-xl"
           />
