@@ -17,25 +17,9 @@ const products = [
     rating: 5,
     reviews: 265,
   },
-  {
-    name: "Cat Litter Lavender | Advan...",
-    img: "/catproduct3.png",
-    price: "₹2,229",
-    oldPrice: "₹2,449",
-    rating: 5,
-    reviews: 265,
-  },
-    {
-    name: "Whiskas Adult (1+ Years) Dry Cat",
-    img: "/catproduct1.png",
-    price: "₹2,229",
-    oldPrice: "₹2,449",
-    rating: 5,
-    reviews: 265,
-  },
-  {
-    name: "Wahl 820000 4-in-1 Shampoo",
-    img: "/catproduct2.png",
+     {
+    name: "Canine Creek Club Ultra Premium Dry",
+    img: "/Canine Creek.png",
     price: "₹2,229",
     oldPrice: "₹2,449",
     rating: 5,
@@ -44,6 +28,23 @@ const products = [
   {
     name: "Cat Litter Lavender | Advan...",
     img: "/catproduct3.png",
+    price: "₹2,229",
+    oldPrice: "₹2,449",
+    rating: 5,
+    reviews: 265,
+  },
+  
+  {
+    name: "Folding Jaw Clamp Poop Sco...",
+    img: "/Folding.png",
+    price: "₹2,229",
+    oldPrice: "₹2,449",
+    rating: 5,
+    reviews: 265,
+  },
+  {
+    name: "Self Cleaning Dog Comb & Cat Co...",
+    img: "/Self.png",
     price: "₹2,229",
     oldPrice: "₹2,449",
     rating: 5,
@@ -54,7 +55,7 @@ const products = [
 export default function NewArrivals() {
   return (
     <section className="w-full py-10 px-4  cursor-pointer">
-      <div className="max-w-8xl mx-auto px-4">
+      <div className="max-w-8xl mx-auto">
                                   
         {/* HEADER */}
         <div className="flex items-center justify-between mb-6">
@@ -131,3 +132,4 @@ export default function NewArrivals() {
     </section>
   );
 }
+

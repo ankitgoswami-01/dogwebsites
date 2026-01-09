@@ -42,59 +42,54 @@ export default function CategoryNav() {
         scrollAmount = 0;
       }
       slider.scrollTo({ left: scrollAmount, behavior: "smooth" });
-    }, 2000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <nav className="w-full bg-white border-b mt-[70px]">
-      <div className="w-full px-2 md:px-4">
+    <nav className="w-full bg-white border-b relative z-40 ">
 
-        {/* DESKTOP */}
-        <div className="hidden md:flex justify-center gap-15 py-3">
-          {categories.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={index}
-                className="flex items-center gap-2 text-sm font-medium
-                           text-[#1F2E46] hover:text-black transition
-                           cursor-pointer"
-              >
-                <Icon className="w-4 h-4 pointer-events-none" />
-                <span className="pointer-events-none">{item.name}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* MOBILE */}
-        <div
-          ref={mobileSliderRef}
-          className="md:hidden flex gap-5 py-3 overflow-x-auto
-                     snap-x snap-mandatory scrollbar-hide mt-[110px]"
-        >
-          {categories.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={index}
-                className="snap-start flex flex-col items-center justify-center
-                           min-w-[72px] px-2 py-2 rounded-lg
-                           text-xs font-medium text-[#1F2E46]
-                           active:bg-gray-100 cursor-pointer"
-              >
-                <Icon className="w-6 h-6 mb-1 pointer-events-none" />
-                <span className="text-center leading-tight pointer-events-none">
-                  {item.name}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-
+      {/* DESKTOP */}
+      <div className="hidden md:flex w-full px-6 py-4 justify-between">
+        {categories.map((item, index) => {
+          const Icon = item.icon;
+          return (
+            <button
+              key={index}
+              className="flex items-center gap-2 text-sm font-medium
+                         text-[#1F2E46] hover:text-black"
+            >
+              <Icon className="w-4 h-4" />
+              {item.name}
+            </button>
+          );
+        })}
       </div>
+
+      {/* MOBILE */}
+      <div
+        ref={mobileSliderRef}
+        className="md:hidden flex w-full gap-6 px-4 py-3
+                   overflow-x-auto scrollbar-hide pt-[64px] "
+      >
+        {categories.map((item, index) => {
+          const Icon = item.icon;
+          return (
+            <button
+              key={index}
+              className="flex flex-col items-center min-w-[72px]
+                         text-xs font-medium text-[#1F2E46]"
+            >
+              <Icon className="w-6 h-6 mb-1" />
+              <span className="text-center leading-tight">
+                {item.name}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
     </nav>
   );
 }

@@ -3,7 +3,7 @@ import { Search, ShoppingCart, User, Download, Sparkles } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="w-full bg-white border-b fixed top-0 z-50">
+    <header className="w-full bg-white border-b ">
       <div className="max-w-8xl mx-auto px-4">
         {/* TOP ROW */}
         <div className="flex flex-wrap items-center justify-between gap-3 min-h-[64px]">

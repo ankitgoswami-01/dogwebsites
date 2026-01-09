@@ -60,7 +60,7 @@ export default function BestDeals() {
         {/* HEADER */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#0E0E0E]">
-            New Arrivals
+            Best Deals
           </h2>
 
           <button className="bg-[#1E2B42] text-white px-6 py-2 rounded-full text-sm font-medium  cursor-pointer ">

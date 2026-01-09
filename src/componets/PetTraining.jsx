@@ -128,9 +128,20 @@ export default function PetTraining() {
     </div>
 
     {/* BUTTON */}
-    <button className="bg-[#1E2B42] text-white text-sm px-5 py-2 rounded-full w-fit cursor-pointer">
-      Book Session Today →
-    </button>
+    <button
+  className="
+    bg-[#1E2B42] text-white
+    text-xs sm:text-sm
+    px-4 sm:px-5
+    py-1.5 sm:py-2
+    rounded-full
+    w-fit
+    cursor-pointer
+  "
+>
+  Book Session Today →
+</button>
+
   </div>
 
   {/* IMAGE */}
